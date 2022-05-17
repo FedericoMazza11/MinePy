@@ -2,10 +2,8 @@
 import math
 import ctypes
 import pyglet
-
 pyglet.options["shadow_window"] = False
 pyglet.options["debug_gl"] = False
-
 import pyglet.gl as gl
 import matrix
 import shader
@@ -15,7 +13,6 @@ import world
 class Window(pyglet.window.Window):
 	def __init__(self, **args):
 		super().__init__(**args)
-
 
 		self.world = world.World()
 		self.set_exclusive_mouse(True)
